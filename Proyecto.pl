@@ -18,7 +18,7 @@ departamento(huila).
 departamento(la_Guajira).
 departamento(magdalena).
 departamento(meta).
-departamento(nariño).
+departamento(nariï¿½o).
 departamento(norte_Santander).
 departamento(putumayo).
 departamento(quindio).
@@ -42,10 +42,10 @@ producto(frutales).
 cultivar(atlantico, algodon).
 cultivar(putumayo, leguminosas).
 cultivar(putumayo, frutales).
-cultivar(nariño, cereales).
-cultivar(nariño, frutales).
-cultivar(nariño, papa).
-cultivar(nariño, cafe).
+cultivar(nariï¿½o, cereales).
+cultivar(nariï¿½o, frutales).
+cultivar(nariï¿½o, papa).
+cultivar(nariï¿½o, cafe).
 cultivar(cauca, papa).
 cultivar(cauca, frutales).
 cultivar(cauca, cereales).
@@ -111,5 +111,27 @@ cultivar(bolivar, algodon).
 cultivar(magdalena, algodon).
 cultivar(magdalena, cereales).
 cultivar(magdalena, cafe).
+
+
+% terreno( DEPARTAMENTO , HUMEDAD , PH , TEXTURA ).
+%   Arenosa     Arcillosa
+terreno(antioquia,50,7,arcillosa).
+terreno(antioquia,50,7,arenosa).
+terreno(bolivar,50,7,arcillosa).
+terreno(bolivar,50,7,arenosa).
+terreno(boyaca,50,7,arcillosa).
+terreno(boyaca,50,7,arenosa).
+terreno(cauca,50,7,arcillosa).
+terreno(cauca,50,7,arenosa).
+terreno(huila,50,7,arcillosa).
+terreno(huila,50,7,arenosa).
+terreno(magdalena,50,7,arcillosa).
+terreno(magdalena,50,7,arenosa).
+terreno(sucre,50,7,arcillosa).
+terreno(sucre,50,7,arenosa).
+terreno(tolima,50,7,arcillosa).
+terreno(tolima,50,7,arenosa).
+terreno(t,50,7,arenosa).
+
 
 

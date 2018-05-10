@@ -4,8 +4,10 @@ recomendacion(arido).
 caracteristicas_terreno(prueba1,prueba2,prueba3,resultado1).
 caracteristicas_terreno(prueba1,prueba2,prueba3,resultado2).
 
-?-window(_, _,crea_ventana(),"SANTID",200,200, 600,600), 
-window_brush(_, rgb(100, 100, 100)),update_window(_).
+?-window(_, _,crea_ventana(),"SANTID",200,200, 542, 415),
+window_brush(_, "fondo.bmp"),update_window(_). 
+%window_brush(_, rgb(100, 100, 100)),update_window(_).
+
 
 crea_ventana(init):- 
 window_brush(_, rgb(100, 100, 100)), 
@@ -18,9 +20,10 @@ menu(normal,_,_,propietario(_),"&PROPIETARIO").
 crea_ventana2(init):-
 window_brush(_, rgb(100, 100, 100)).
 
+%MODULO DEL PROPIETARIO
 propietario(press):-
-window( _, _, crea_ventana2(), "Inversionista", 150,50,450,650),
-
+window( _, _, crea_ventana2(), "PROPIETARIO", 150,50,450,650),
+window_brush(_, "fondo.bmp"),
 text_out(10,20,"Departamento:"),
 edit(G_Departamento,_,edit_func(_),"",140,20,100,30),
 
@@ -36,8 +39,9 @@ edit(G_textura,_,edit_func(_),"",140,140,100,30),
 
 button(_,_,btn_Consultar(_),"&Consultar",30,200,100,30),
 
-edit(G_Resultado_Consulta,_,edit_func(_),"Resultado:",30,240,300,350),
 
+edit(G_Resultado_Consulta,_,edit_func(_),"Resultado:",30,240,300,350),
+update_window(_),
 read(Departamento,"Digite Departamento:"),
 set_text(print(Departamento),G_Departamento),
 
@@ -51,14 +55,14 @@ read(Textura,"Digite el grado de arenocidad:"),
 set_text(print(Textura),G_textura),
 
 (terreno_optimo(Departamento,Humedad,Ph,Textura)->
-message("Información","Apto",i)
+message("Informaciï¿½n","Apto",i)
 else
-message("Información","No apto",s)).
+message("Informaciï¿½n","No apto",s)).
 
 
-%interfaz propietario--------------------------
+%interfaz INVERSIONISTA--------------------------
 inversionista(press):-
-window( _, _, crea_ventana2(), "Propietario", 150,50,450,650),
+window( _, _, crea_ventana2(), "INVERSIONISTA", 150,50,450,650),
 
 text_out(10,20,"Planteacion:"),
 edit(G_planeacion,_,edit_func(_),"",110,20,100,30),
@@ -85,9 +89,9 @@ set_text(print(Area),G_area),
 
 (caracteristicas_terreno(Planteacion,Departamento,Area,X)->
 add_text(G_Resultado_Busqueda,print(X) + ", ")
-%message("Información","Apto",i)
+%message("Informaciï¿½n","Apto",i)
 else
-message("Información","No apto",s)).
+message("Informaciï¿½n","No apto",s)).
 
 
 btn_Buscar(press):-
