@@ -118,23 +118,24 @@ cultivar(valle_Cauca, cafe).
 %   EJEMPLOS DE TERRENOS 
 % terreno( DEPARTAMENTO , HUMEDAD , PH , TEXTURA ).
 %   Arenosa     Arcillosa
-terreno(antioquia,50,7,arcillosa).
-terreno(antioquia,50,7,arenosa).
-terreno(bolivar,50,7,arcillosa).
-terreno(bolivar,50,7,arenosa).
-terreno(boyaca,50,7,arcillosa).
-terreno(boyaca,50,7,arenosa).
-terreno(cauca,50,7,arcillosa).
-terreno(cauca,50,7,arenosa).
-terreno(huila,50,7,arcillosa).
-terreno(huila,50,7,arenosa).
-terreno(magdalena,50,7,arcillosa).
-terreno(magdalena,50,7,arenosa).
-terreno(sucre,50,7,arcillosa).
-terreno(sucre,50,7,arenosa).
-terreno(tolima,50,7,arcillosa).
-terreno(tolima,50,7,arenosa).
-terreno(t,50,7,arenosa). % EJEMPLO
+terreno(123,antioquia,50,7,arcillosa).
+terreno(1235,antioquia,50,7,arcillosa).
+terreno(123,antioquia,50,7,arenosa).
+terreno(123,bolivar,50,7,arcillosa).
+terreno(123,bolivar,50,7,arenosa).
+terreno(123,boyaca,50,7,arcillosa).
+terreno(123,boyaca,50,7,arenosa).
+terreno(123,cauca,50,7,arcillosa).
+terreno(123,cauca,50,7,arenosa).
+terreno(123,huila,50,7,arcillosa).
+terreno(123,huila,50,7,arenosa).
+terreno(123,magdalena,50,7,arcillosa).
+terreno(123,magdalena,50,7,arenosa).
+terreno(123,sucre,50,7,arcillosa).
+terreno(123,sucre,50,7,arenosa).
+terreno(123,tolima,50,7,arcillosa).
+terreno(123,tolima,50,7,arenosa).
+terreno(123,t,50,7,arenosa). % EJEMPLO
 
 %   PRODUCTO POR TIPO DE SUELO
 
